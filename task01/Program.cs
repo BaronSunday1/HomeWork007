@@ -18,7 +18,7 @@ double[,] GenerateMatrix(int m, int n)
     {
         for(int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i,j] = rand.Next(-10,10);
+            matrix[i,j] = Math.Round(rand.Next(-100, 101)*0.1, 1);
         }
     }
     return matrix;
