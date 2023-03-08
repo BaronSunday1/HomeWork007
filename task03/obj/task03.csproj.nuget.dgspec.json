@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#Work07\\task01\\task01.csproj": {}
+    "D:\\C#Work07\\task03\\task03.csproj": {}
   },
   "projects": {
-    "D:\\C#Work07\\task01\\task01.csproj": {
+    "D:\\C#Work07\\task03\\task03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#Work07\\task01\\task01.csproj",
-        "projectName": "task01",
-        "projectPath": "D:\\C#Work07\\task01\\task01.csproj",
+        "projectUniqueName": "D:\\C#Work07\\task03\\task03.csproj",
+        "projectName": "task03",
+        "projectPath": "D:\\C#Work07\\task03\\task03.csproj",
         "packagesPath": "C:\\Users\\taras\\.nuget\\packages\\",
-        "outputPath": "D:\\C#Work07\\task01\\obj\\",
+        "outputPath": "D:\\C#Work07\\task03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\taras\\AppData\\Roaming\\NuGet\\NuGet.Config"
