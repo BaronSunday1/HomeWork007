@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EqlH+KujnAbQJIrpIlH5LEVVZqXu9/+Rw8ELZuiQ2MUionjoAi/rIE3CsrfVqDpWzyaywIXoIYgAVYuI7CrM1Q==",
+  "dgSpecHash": "XW1AQHeM/W9PMee9Nrje+8DZc3U4X9sXFeyWkEPubH39fuSP0+2w/z6sA1s2jkODhtZcRTTVe6pVMC7Ky0HhPA==",
   "success": true,
-  "projectFilePath": "D:\\Lessons\\C#Work07\\task02\\task02.csproj",
+  "projectFilePath": "D:\\C#Work07\\task02\\task02.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
