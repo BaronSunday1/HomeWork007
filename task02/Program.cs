@@ -6,37 +6,47 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-int m = 4;
-int n = 4;
-int[,] array = new int[m, n];
-Console.WriteLine("Введите значение: ");
-int number = Convert.ToInt32(Console.ReadLine());
-FillArray(array);
-SearchElementArray(array, number);
+Console.WriteLine("Введите координату строки: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координату столбца: ");
+int m = Convert.ToInt32(Console.ReadLine());
+int [,] number = new int [10,10];
+FillArrayRandomNumbers(number);
 
-void FillArray(int[,] array)
+if (n > number.GetLength(0) || m > number.GetLength(1))
+{
+    Console.WriteLine("Такого элемента нет.");
+}
+else
+{
+    Console.WriteLine($"значение элемента {n} строки и {m} столбца равно {number[n-1,m-1]}");
+}
+
+PrintArray(number);
+
+void FillArrayRandomNumbers(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+        {        
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                array [i,j] = new Random().Next(-100, 100)/10;
+            }   
+        }
+}
+
+void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
+        Console.Write("[ ");
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 10);
-            Console.Write(array[i, j] + " ");
-        }
-        Console.WriteLine();
+            Console.Write(array[i,j] + " ");
+        }   
+        Console.Write("]");
+        Console.WriteLine(""); 
     }
 }
-void SearchElementArray(int[,] searchelemen, int usernumber)
-{
-    for (int i = 0; i < searchelemen.GetLength(0); i++)
-    {
-        for (int j = 0; j < searchelemen.GetLength(1); j++)
-        {
-            if (searchelemen[i, j] == usernumber)
-            {
-                Console.WriteLine($"Координаты вашего значения:  строка {i}  столбец {j}");
-            }
-         
-        }
-    }
-}
+
+
